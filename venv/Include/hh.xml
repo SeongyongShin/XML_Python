@@ -1,0 +1,77 @@
+<docuInfo>
+  <issNum>2211000022082919028215090124030</issNum>
+  <issDate>20190903</issDate>
+  <issTime>102136</issTime>
+  <irId>6ED1AA782E7E76AE81384759C65DC6D990BA37233CC1F12C34D9A06E54CC7D86</irId>
+  <usrId>damim07</usrId>
+  <irP>3</irP>
+  <fmyirId>6ED1AA782E7E76AE81384759C65DC6D990BA37233CC1F12C34D9A06E54CC7D86</fmyirId>
+  <inqSn>20190903IQ00012172</inqSn>
+  <fmyrltCd>01</fmyrltCd>
+  <issuer>조창준</issuer>
+  <fmyId>6ED1AA782E7E76AE81384759C65DC6D990BA37233CC1F12C34D9A06E54CC7D86</fmyId>
+  <target>
+    <cntr>서울특별시 관악구 대학2길 16</cntr>
+    <name>박해철</name>
+    <namehanja>0000673400006D7700005586</namehanja>
+    <rrn>750510-1******</rrn>
+    <bon>밀양</bon>
+    <bonhanja>00005BC60000967D</bonhanja>
+    <birth>1975년 05월 10일</birth>
+    <gen>남</gen>
+  </target>
+  <marriage>
+    <b013>
+      <g11>
+        <rel>처</rel>
+        <live>1</live>
+        <name>김보선</name>
+        <namehanja>000091D10000752B00005BA3</namehanja>
+        <birth>19761025</birth>
+        <born_date>1976년 10월 25일</born_date>
+        <rrn>761025-2******</rrn>
+        <bonhanja>00007F8500005DDE</bonhanja>
+        <bon>나주</bon>
+        <gen>여</gen>
+        <u01>N</u01>
+        <sn>7</sn>
+      </g11>
+    </b013>
+    <b002>
+      <gubun>혼인</gubun>
+      <u01>N</u01>
+      <u02>Y</u02>
+      <g133>
+        <title>신고일</title>
+        <content>2005년 12월 09일</content>
+      </g133>
+    </b002>
+    <b002>
+      <gubun>혼인</gubun>
+      <u01>N</u01>
+      <u02>Y</u02>
+      <g056>
+        <title>배우자</title>
+        <content>김보선</content>
+      </g056>
+    </b002>
+    <b002>
+      <gubun>혼인</gubun>
+      <u01>N</u01>
+      <u02>Y</u02>
+      <g129>
+        <title>송부일</title>
+        <content>2005년 12월 13일</content>
+      </g129>
+    </b002>
+    <b002>
+      <gubun>혼인</gubun>
+      <u01>N</u01>
+      <u02>Y</u02>
+      <g130>
+        <title>송부자</title>
+        <content>서울특별시 강서구청장</content>
+      </g130>
+    </b002>
+  </marriage>
+</docuInfo>
