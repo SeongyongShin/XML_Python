@@ -20,9 +20,9 @@ def setWindow():
     psubmit.grid(row=2, column=0)
     result.grid(row=3, column=0)
     clear.grid(row=4, column=0)
-    entry.config(width=window.winfo_width(),height=100,yscrollcommand=scrollbar.set) #window.winfo_width()
+    entry.config(width=200,height=60,yscrollcommand=scrollbar.set) #window.winfo_width()
     entry.grid(row=0, column=1, rowspan=10)
-    scrollbar.grid(row=0, column=1,rowspan=10,)
+    scrollbar.grid(row=0, column=2,rowspan=10,sticky="new")
     scrollbar.config(command=entry.yview)
     entry['yscrollcommand'] = scrollbar.set
 def btn_pressed(value):
