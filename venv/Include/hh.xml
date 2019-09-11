@@ -1,0 +1,35 @@
+<root>
+  <ctype>Q</ctype>
+  <searchCond>
+    <firstChoice4>2</firstChoice4>
+    <secondChoice4>6</secondChoice4>
+    <thirdChoice4>23</thirdChoice4>
+  </searchCond>
+  <searchDate>2019-09-11</searchDate>
+  <searchResult>
+    <item>
+      <corp>손보협회</corp>
+      <career_11Z>4578460</career_11Z>
+      <career_14Z>2053010</career_14Z>
+      <career_29P>1073160</career_29P>
+    </item>
+    <item>
+      <corp>삼성화재</corp>
+      <career_11Z>6118450</career_11Z>
+      <career_14Z>2743560</career_14Z>
+      <career_29P>1434130</career_29P>
+    </item>
+    <item>
+      <corp>KB손보</corp>
+      <career_11Z>5211150</career_11Z>
+      <career_14Z>3084810</career_14Z>
+      <career_29P>1498340</career_29P>
+    </item>
+    <item>
+      <corp>DB손보</corp>
+      <career_11Z>5473380</career_11Z>
+      <career_14Z>3327810</career_14Z>
+      <career_29P>1497510</career_29P>
+    </item>
+  </searchResult>
+</root>

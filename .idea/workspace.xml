@@ -2,7 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e1f26c41-13be-45bb-807c-3e5677e79dcc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/venv/Include/dist/test2.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Include/build/myXml.exe/Analysis-00.toc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Include/build/myXml.exe/EXE-00.toc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Include/build/myXml.exe/PKG-00.pkg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Include/build/myXml.exe/PKG-00.toc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Include/build/myXml.exe/PYZ-00.pyz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Include/build/myXml.exe/PYZ-00.toc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Include/build/myXml.exe/Tree-00.toc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Include/build/myXml.exe/Tree-01.toc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Include/build/myXml.exe/base_library.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Include/build/myXml.exe/myXml.exe.exe.manifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Include/build/myXml.exe/warn-myXml.exe.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Include/build/myXml.exe/xref-myXml.exe.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Include/dist/myXml.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Include/myXml.exe.spec" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/venv/Include/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Include/test.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,7 +41,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/venv/Scripts/pyinstaller.exe" />
-    <property name="settings.editor.selected.configurable" value="preferences.externalTools" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -83,12 +98,37 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="test2" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="test1" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/venv/Include/dist" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/venv/Include/dist/test2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Python.test" />
+        <item itemvalue="Python.test2" />
         <item itemvalue="Python.page1" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="showServicesTree" value="false" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
