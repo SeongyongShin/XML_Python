@@ -1,25 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e1f26c41-13be-45bb-807c-3e5677e79dcc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/venv/Include/dist/test2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Include/build/myXml.exe/Analysis-00.toc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Include/build/myXml.exe/EXE-00.toc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Include/build/myXml.exe/PKG-00.pkg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Include/build/myXml.exe/PKG-00.toc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Include/build/myXml.exe/PYZ-00.pyz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Include/build/myXml.exe/PYZ-00.toc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Include/build/myXml.exe/Tree-00.toc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Include/build/myXml.exe/Tree-01.toc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Include/build/myXml.exe/base_library.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Include/build/myXml.exe/myXml.exe.exe.manifest" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Include/build/myXml.exe/warn-myXml.exe.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Include/build/myXml.exe/xref-myXml.exe.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Include/dist/myXml.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Include/myXml.exe.spec" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Include/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Include/test.py" afterDir="false" />
-    </list>
+    <list default="true" id="e1f26c41-13be-45bb-807c-3e5677e79dcc" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
