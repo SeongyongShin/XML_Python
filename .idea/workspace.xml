@@ -1,7 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e1f26c41-13be-45bb-807c-3e5677e79dcc" name="Default Changelist" comment="" />
+    <list default="true" id="e1f26c41-13be-45bb-807c-3e5677e79dcc" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Include/hh.xml" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Include/hh.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Include/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Include/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/easy-install.pth" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/easy-install.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Scripts/build/test/Analysis-00.toc" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Scripts/build/test/Analysis-00.toc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Scripts/build/test/EXE-00.toc" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Scripts/build/test/EXE-00.toc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Scripts/build/test/PKG-00.pkg" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Scripts/build/test/PKG-00.pkg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Scripts/build/test/PKG-00.toc" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Scripts/build/test/PKG-00.toc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Scripts/build/test/PYZ-00.pyz" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Scripts/build/test/PYZ-00.pyz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Scripts/build/test/PYZ-00.toc" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Scripts/build/test/PYZ-00.toc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Scripts/build/test/base_library.zip" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Scripts/build/test/base_library.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Scripts/build/test/warn-test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Scripts/build/test/warn-test.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Scripts/build/test/xref-test.html" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Scripts/build/test/xref-test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Scripts/dist/test.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Scripts/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Scripts/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Scripts/xslt/xslt_4insu.xslt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Scripts/xslt/xslt_aipis_reqrefund.xslt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Scripts/xslt/xslt_bidv.xslt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Scripts/xslt/xslt_ch_carhistory.xslt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Scripts/xslt/xslt_conti_insusearch.xslt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Scripts/xslt/xslt_crime_search.xslt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Scripts/xslt/xslt_ecar.xslt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Scripts/xslt/xslt_efine_licensecareer.xslt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Scripts/xslt/xslt_gov24_inout.xslt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Scripts/xslt/xslt_gov24_livingin.xslt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Scripts/xslt/xslt_mw24_c.xslt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Scripts/xslt/xslt_mw24_d.xslt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Scripts/xslt/xslt_nhis_ja.xslt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Scripts/xslt/xslt_nhis_wannab.xslt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Scripts/xslt/xslt_nts_gongje.xslt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Scripts/xslt/xslt_nts_pieup.xslt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Scripts/xslt/xslt_nts_s_b.xslt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Scripts/xslt/xslt_nts_s_j.xslt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Scripts/xslt/xslt_nts_saupja.xslt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Scripts/xslt/xslt_nts_saupjanglist.xslt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Scripts/xslt/xslt_scf_gajok.xslt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Scripts/xslt/xslt_scf_gibon.xslt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Scripts/xslt/xslt_scf_honin.xslt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Scripts/xslt/xslt_scj_c.xslt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Scripts/xslt/xslt_scj_d.xslt" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

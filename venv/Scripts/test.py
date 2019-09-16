@@ -54,7 +54,7 @@ def make_substring():
         tree = ele.parse("hh.xml")
         entry.delete(0.0, tkinter.END)
         parsedXml = etree.parse("hh.xml")
-        str2 = etree.tostring(parsedXml, pretty_print = True)
+        str2 = etree.tostring(parsedXml, pretty_print = True, encoding='utf-8').decode()
 
         entry.insert(0.0, str2)
     except:

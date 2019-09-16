@@ -3,11 +3,16 @@ import clipboard
 import lxml.etree as etree
 import xml.etree.ElementTree as ele
 from xml.etree.ElementTree import Element, dump
-from tkinter import messagebox
+from tkinter import *
 from math import*
-from tkinter import Button
 
 xmlString = ""
+msg = ""
+OPTIONS = [
+"Jan",
+"Feb",
+"Mar"
+]
 def nextPage():
     print("다음 페이지 고")
     start.destroy()
@@ -22,6 +27,7 @@ def setWindow():
     clear.grid(row=4, column=0)
     entry.config(width=200,height=60,yscrollcommand=scrollbar.set) #window.winfo_width()
     entry.grid(row=0, column=1, rowspan=10)
+    select.grid(row=5,column=0)
     scrollbar.grid(row=0, column=2,rowspan=10,sticky="new")
     scrollbar.config(command=entry.yview)
     entry['yscrollcommand'] = scrollbar.set
@@ -54,8 +60,11 @@ def make_substring():
         tree = ele.parse("hh.xml")
         entry.delete(0.0, tkinter.END)
         parsedXml = etree.parse("hh.xml")
-        str2 = etree.tostring(parsedXml, pretty_print = True,encoding='utf-8').decode()
-
+        str2 = etree.tostring(parsedXml, pretty_print = True, encoding='utf-8').decode()
+        f = open("abc.xml",'w')
+        s = "<?xml-stylesheet type='text/xsl' href="+msg+".xslt?>" + xmlString
+        f.write(s)
+        f.close()
         entry.insert(0.0, str2)
     except:
         error_xml()
@@ -90,6 +99,9 @@ psubmit = tkinter.Button(window, width=30, heigh=5, text="붙여널고 결과 �
 result = tkinter.Label(window,width=30, heigh=5,text="여기에\n결과가\n표시됩니다",relief="solid", bd = 3,bg="Yellow")
 clear = tkinter.Button(window,width=30,heigh=5,text="초기화",command=lambda :btn_pressed('3'))
 entry = tkinter.Text()
+variable = StringVar(master)
+variable.set(OPTIONS[0])
+select = tkinter.OptionMenu(window,variable,"1","2,","3")
 scrollbar=tkinter.Scrollbar(window)
 
 
