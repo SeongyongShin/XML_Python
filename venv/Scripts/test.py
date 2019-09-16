@@ -2,12 +2,13 @@ import tkinter
 import clipboard
 import lxml.etree as etree
 import xml.etree.ElementTree as ele
+from Include import myFile
 from xml.etree.ElementTree import Element, dump
 from tkinter import messagebox
 from math import*
-from tkinter import Button
 
 xmlString = ""
+msg = ""
 def nextPage():
     print("다음 페이지 고")
     start.destroy()
@@ -16,22 +17,33 @@ def nextPage():
 def setWindow():
     window.geometry("800x800")
     window.resizable(True, True)
-    submit.grid(row=1, column=0)
-    psubmit.grid(row=2, column=0)
-    result.grid(row=3, column=0)
-    clear.grid(row=4, column=0)
-    entry.config(width=200,height=60,yscrollcommand=scrollbar.set) #window.winfo_width()
-    entry.grid(row=0, column=1, rowspan=10)
-    scrollbar.grid(row=0, column=2,rowspan=10,sticky="new")
+    frame1.pack(side="left", fill="both", expand=False)
+    frame2.pack(side="right", fill="both", expand=True)
+    submit.pack(side = "top",fill = "x")
+    psubmit.pack(side = "top", fill = "x")
+    result.pack(side = "top", fill = "x")
+    clear.pack(side = "top", fill = "x")
+    entry.config(yscrollcommand=scrollbar.set) #window.winfo_width()
+    entry.pack(side = "top", fill="x")
+    scrollbar.pack(side = "right")
     scrollbar.config(command=entry.yview)
+    listbox.pack(side = "top", fill = "x")
     entry['yscrollcommand'] = scrollbar.set
 def btn_pressed(value):
     if(value=='1'):
-        make_substring()
+        try:
+            make_substring()
+            make_substring()
+        except:
+            error_xml()
     elif(value=='2'):
         entry.delete(0.0,tkinter.END)
         entry.insert(0.0,clipboard.paste())
-        make_substring()
+        try:
+            make_substring()
+            make_substring()
+        except:
+            error_xml()
     elif(value=='3'):
         entry.delete(0.0,tkinter.END)
 
@@ -42,23 +54,28 @@ def make_substring():
         error_xml()
         return;
     root = Element("xml")
-    try:
-        xmlString = xmlString[num:]
-        elem = ele.fromstring(xmlString)
-        root.append(elem)
-        indent(elem, 0)
-        tree = ele.ElementTree(elem)
-        tree.write("hh.xml",encoding="utf-8")
-        result["text"] = "정상"
-        result["bg"] = "green"
-        tree = ele.parse("hh.xml")
-        entry.delete(0.0, tkinter.END)
-        parsedXml = etree.parse("hh.xml")
-        str2 = etree.tostring(parsedXml, pretty_print = True, encoding='utf-8').decode()
+    # try:
+    #msg = "xslt_nhis_ja"
+    xmlString = xmlString[num:]
+    elem = ele.fromstring(xmlString)
+    root.append(elem)
+    indent(elem, 0)
+    tree = ele.ElementTree(elem)
+    tree.write("xslt\\hh.xml",encoding="utf-8")
+    result["text"] = "정상"
+    result["bg"] = "green"
+    tree = ele.parse("xslt\\hh.xml")
+    entry.delete(0.0, tkinter.END)
+    parsedXml = etree.parse("xslt/hh.xml")
+    str2 = etree.tostring(parsedXml, pretty_print = True, encoding='utf-8').decode()
+    f = open("xslt\\abc.xml",'w',encoding='utf8')
+    s = '<?xml version="1.0" encoding="UTF-8"?>\n<?xml-stylesheet type="text/xsl" href="'+myFile.findXslt(listbox.get(listbox.curselection()))+'.xslt"?>\n' + xmlString
 
-        entry.insert(0.0, str2)
-    except:
-        error_xml()
+    f.write(s)
+    f.close()
+    entry.insert(0.0, str2)
+    # except:
+    #     error_xml()
 
 
 def indent(elem, level=0):
@@ -85,15 +102,22 @@ window=tkinter.Tk()
 window.title("BY. sy")
 window.geometry("240x60")
 window.resizable(False,False)
-submit = tkinter.Button(window,width=30,heigh=5,text="결과 제출",command=lambda :btn_pressed('1'))
-psubmit = tkinter.Button(window, width=30, heigh=5, text="붙여널고 결과 제출\n(AutoPaste)", command=lambda: btn_pressed('2'))
-result = tkinter.Label(window,width=30, heigh=5,text="여기에\n결과가\n표시됩니다",relief="solid", bd = 3,bg="Yellow")
-clear = tkinter.Button(window,width=30,heigh=5,text="초기화",command=lambda :btn_pressed('3'))
-entry = tkinter.Text()
-scrollbar=tkinter.Scrollbar(window)
+frame1=tkinter.Frame(window, relief="solid", bd=2)
+frame2=tkinter.Frame(window, relief="solid", bd=2)
+submit = tkinter.Button(frame1,width=30,heigh=5,text="결과 제출",command=lambda :btn_pressed('1'))
+psubmit = tkinter.Button(frame1, width=30, heigh=5, text="붙여널고 결과 제출\n(AutoPaste)", command=lambda: btn_pressed('2'))
+result = tkinter.Label(frame1,width=30, heigh=5,text="여기에\n결과가\n표시됩니다",relief="solid", bd = 3,bg="Yellow")
+clear = tkinter.Button(frame1,width=30,heigh=5,text="초기화",command=lambda :btn_pressed('3'))
+entry = tkinter.Text(frame2,heigh=100)
+listbox = tkinter.Listbox(frame1, selectmode='extended', height=10)
+listbox=tkinter.Listbox(frame1,width=30,height=25,font=('times',13))
+i=0
+for items in myFile.itemList():
+    listbox.insert(i,items)
+    i +=1
+scrollbar=tkinter.Scrollbar(frame2)
 
 
-#label.pack()
 start=tkinter.Button(window,width=30,text="XML 확인하기 \n version (1.0.0) release",  command=lambda:nextPage())
 start.place(x = 10, y =10)
 window.mainloop()
