@@ -2,7 +2,7 @@ import tkinter
 import clipboard
 import lxml.etree as etree
 import xml.etree.ElementTree as ele
-from Include import myFile
+from Scripts import myFile
 from xml.etree.ElementTree import Element, dump
 from tkinter import messagebox
 from math import*
