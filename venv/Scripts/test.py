@@ -2,6 +2,8 @@ import tkinter
 import clipboard
 import lxml.etree as etree
 import xml.etree.ElementTree as ele
+from tkinter import *
+import tkinter.ttk
 from Scripts import myFile
 from xml.etree.ElementTree import Element, dump
 from tkinter import messagebox
@@ -9,8 +11,53 @@ from math import*
 
 xmlString = ""
 msg = ""
+def change(): # 텍스트에 입력된 것을 문자열로 바꾸기
+
+    xml=ele.fromstring(entry.get(0.0, tkinter.END))
+    entry.delete(0.0, END)
+    makeTreeView(xml)
+
+def makeTreeView(root):
+    stack_all=0
+    stack_iter=0
+    iter_length=[]
+    parent_list=[]
+    tag_list=[]
+    stackMax = 0
+    for a in root.iter(): # 최대 인덱스 구하기
+        stackMax += 1
+        if len(list(a)) != 0:
+            parent_list.append(a)
+        tag_list.append(a)
+        iter_length.append(len(list(a)))  # 하위 노드 개수 구하여 리스트에 저장
+
+    for i in root.iter(): # Tab하여 출력
+        if(i in tag_list[stack_all-1]):
+            stack_iter+=1
+        elif i in parent_list and tag_list[stack_all+iter_length[stack_all]] in i:
+            stack_iter-=1
+        for tabRepeat in range(stack_iter): # Tab
+            entry.insert(END, "  ")
+        printTreeView(i)
+        stack_all+=1
+
+def printTreeView(a):
+    if (a.text):
+        c = '<{}>\t{}'.format(a.tag, a.text)
+    else:
+        c = '<{}>'.format(a.tag)
+    entry.insert(END, c)
+    printAttribute(a)
+    entry.insert(END, "\n")
+
+def printAttribute(tag):
+    if tag.items():
+        for a in tag.items():
+            attrib_split=str(a)[str(a).find("'")+1:-2].split(',')
+            attrib_format='\t(@{} = {})'.format(attrib_split[0][:-1],attrib_split[1][2:])
+            entry.insert(END, attrib_format)
+
 def nextPage():
-    print("다음 페이지 고")
     start.destroy()
     setWindow()
 
@@ -27,23 +74,29 @@ def setWindow():
     entry.pack(side = "top", fill="x")
     scrollbar.pack(side = "right")
     scrollbar.config(command=entry.yview)
+    listbox.selection_set(first=0)
     listbox.pack(side = "top", fill = "x")
     entry['yscrollcommand'] = scrollbar.set
 def btn_pressed(value):
+
     if(value=='1'):
+        check = True
         try:
             make_substring()
             make_substring()
+            change()
         except:
-            error_xml()
+            check = error_xml(check)
     elif(value=='2'):
+        check = True
         entry.delete(0.0,tkinter.END)
         entry.insert(0.0,clipboard.paste())
         try:
             make_substring()
             make_substring()
+            change()
         except:
-            error_xml()
+            check = error_xml(check)
     elif(value=='3'):
         entry.delete(0.0,tkinter.END)
 
@@ -54,8 +107,6 @@ def make_substring():
         error_xml()
         return;
     root = Element("xml")
-    # try:
-    #msg = "xslt_nhis_ja"
     xmlString = xmlString[num:]
     elem = ele.fromstring(xmlString)
     root.append(elem)
@@ -74,9 +125,6 @@ def make_substring():
     f.write(s)
     f.close()
     entry.insert(0.0, str2)
-    # except:
-    #     error_xml()
-
 
 def indent(elem, level=0):
     i = "\n" + level*"  "
@@ -92,10 +140,15 @@ def indent(elem, level=0):
     else:
         if level and (not elem.tail or not elem.tail.strip()):
             elem.tail = i
-def error_xml():
-    messagebox.showinfo(title="아님!", message="XML 형식이 아님!")
-    result["text"] = "비정상"
+def error_xml(check):
     result["bg"] = "red"
+    result["text"] = "비정상"
+    if(check == True):
+        messagebox.showinfo(title="아님!", message="XML 형식이 아님!")
+        return False
+    else:
+        return True
+
 
 window=tkinter.Tk()
 
